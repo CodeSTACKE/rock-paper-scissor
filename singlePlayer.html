@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Navcss Link  -->
+    <link rel="stylesheet" href="/css/navstyle.css">
+    <!-- Font Awesome kit code -->
+    <script src="https://kit.fontawesome.com/01bd3be1b9.js" crossorigin="anonymous"></script>
+    <!-- Animate. Css Link -->
+    <link rel="stylesheet" type="text/css" href="/css/animate.css">
+    <!-- Link to Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+   
+</head>
+
+<body>
+    <header>
+        <h1 class="wow flash">
+            Rock Paper Scissors
+        </h1>
+    </header>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i></i>
+        <i class="fas fa-times" id="cancel"></i></i>
+    </label>
+    <div class="sidebar">
+        <header>RPS</header>
+        <ul>
+            <li><a href="#"><i class="fas fas fa-home"></i>Dashboard</a></li>
+            <li><a href="#"><i class="fas fa-user-alt"></i>Single Player</a></li>
+            <li><a href="#"><i class="fas fa-users"></i>Multi Player</a></li>
+            <li><a href="#"><i class="fas fa-share-square"></i>Logout</a></li>
+        </ul>
+    </div>
+    <section class="content">
+        <div class="score-board">
+            <div id="user-label" class="badge">user</div>
+            <div id="computer-label" class="badge">comp</div>
+            <span id="user-score">0</span>:<span id="computer-score">0</span>
+        </div>
+        <div class="results">
+            <p>Paper Cover rocks.You Win!</p>
+        </div>
+        <div class="choices">
+            <div class="choice" id="r">
+                <img src="/image/rock.png" title="Rock" alt="rock">
+            </div>
+            <div class="choice" id="p">
+                <img src="/image/paper.png" title="Paper" alt="paper">
+            </div>
+            <div class="choice" id="s">
+                <img src="/image/scissors.png" title="Scissors" alt="Scissors">
+            </div>
+        </div>
+        <p id="action-message">Make you Move</p>
+    </section>
+
+
+</body>
+<script src="/js/app.js"></script>
+<!-- WOW.js Script -->
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+</html>
